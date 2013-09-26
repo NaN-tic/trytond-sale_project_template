@@ -1,0 +1,15 @@
+# 
+msgid ""
+msgstr "Content-Type: text/plain; charset=utf-8\n"
+
+msgctxt "error:sale.line:"
+msgid "A default template must be defined."
+msgstr "S'ha de definir una plantilla per defecte"
+
+msgctxt "field:sale.line,create_work:"
+msgid "Create Work"
+msgstr "Crea Tasques"
+
+msgctxt "field:sale.line,work:"
+msgid "Work Effort"
+msgstr "Projecte i tasca"
