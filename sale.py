@@ -33,8 +33,8 @@ class SaleLine():
     def __setup__(cls):
         super(SaleLine, cls).__setup__()
         cls._error_messages.update({
-            'default_template': ('A default template must be defined.'),
-        })
+                'default_template': ('A default template must be defined.'),
+                })
 
     @staticmethod
     def default_create_work():
