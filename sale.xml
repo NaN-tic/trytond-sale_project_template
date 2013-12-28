@@ -3,10 +3,96 @@
           copyright notices and license terms. -->
 <tryton>
     <data>
+        <record model="ir.ui.view" id="sale_configuration_view_form">
+            <field name="model">sale.configuration</field>
+            <field name="inherit" ref="sale.sale_configuration_view_form"/>
+            <field name="name">sale_configuration_form</field>
+        </record>
+        <record model="ir.ui.view" id="sale_view_form">
+            <field name="model">sale.sale</field>
+            <field name="inherit" ref="sale.sale_view_form"/>
+            <field name="name">sale_form</field>
+        </record>
+
+        <record model="ir.action.act_window" id="act_work_form">
+            <field name="name">Project/Task</field>
+            <field name="res_model">project.work</field>
+            <field name="domain">[('id', '=', Eval('work'))]</field>
+        </record>
+        <record model="ir.action.keyword" id="act_work_keyword1">
+            <field name="keyword">form_relate</field>
+            <field name="model">sale.line,-1</field>
+            <field name="action" ref="act_work_form"/>
+        </record>
+        <record model="ir.ui.view" id="sale_line_view_tree">
+            <field name="model">sale.line</field>
+            <field name="type">tree</field>
+            <field name="name">sale_line_tree</field>
+        </record>
         <record model="ir.ui.view" id="sale_line_view_form">
             <field name="model">sale.line</field>
             <field name="inherit" ref="sale.sale_line_view_form"/>
             <field name="name">sale_line_form</field>
         </record>
+        <record model="ir.action.act_window" id="act_sale_line_form">
+            <field name="name">Processed Sale Lines</field>
+            <field name="res_model">sale.line</field>
+            <field name="domain">[('product.project_template', '!=', None), ('type', '=', 'line'),('sale.state', 'in', ['processing', 'done'])]</field>
+            <field name="search_value"></field>
+        </record>
+        <record model="ir.action.act_window.view" id="act_sale_line_form_view1">
+            <field name="sequence" eval="10"/>
+            <field name="view" ref="sale_line_view_tree"/>
+            <field name="act_window" ref="act_sale_line_form"/>
+        </record>
+        <record model="ir.action.act_window.view" id="act_sale_line_form_view2">
+            <field name="sequence" eval="20"/>
+            <field name="view" ref="sale_line_view_form"/>
+            <field name="act_window" ref="act_sale_line_form"/>
+        </record>
+        <record model="ir.action.act_window.domain" id="act_sale_line_form_domain_pending">
+            <field name="name">Pending</field>
+            <field name="sequence" eval="10"/>
+            <field name="domain">[('work', '=', None), ('checked', '=', False), ('discarded', '=', False)]</field>
+            <field name="act_window" ref="act_sale_line_form"/>
+        </record>
+        <record model="ir.action.act_window.domain" id="act_sale_line_form_domain_checked">
+            <field name="name">Checked</field>
+            <field name="sequence" eval="20"/>
+            <field name="domain">[('work', '=', None), ('checked', '=', True), ('discarded', '=', False)]</field>
+            <field name="act_window" ref="act_sale_line_form"/>
+        </record>
+        <record model="ir.action.act_window.domain" id="act_sale_line_form_domain_discarded">
+            <field name="name">Discarded</field>
+            <field name="sequence" eval="30"/>
+            <field name="domain">[('work', '=', None), ('discarded', '=', True)]</field>
+            <field name="act_window" ref="act_sale_line_form"/>
+        </record>
+        <record model="ir.action.act_window.domain" id="act_sale_line_form_domain_processed">
+            <field name="name">Processed</field>
+            <field name="sequence" eval="40"/>
+            <field name="domain">[('work', '!=', None)]</field>
+            <field name="act_window" ref="act_sale_line_form"/>
+        </record>
+        <record model="ir.action.act_window.domain" id="act_sale_line_form_domain_all">
+            <field name="name">All</field>
+            <field name="sequence" eval="9999"/>
+            <field name="domain"></field>
+            <field name="act_window" ref="act_sale_line_form"/>
+        </record>
+
+        <menuitem parent="project.menu_project" action="act_sale_line_form"
+            id="menu_sale_line_form" sequence="10" icon="tryton-list"/>
+
+        <record model="ir.model.button" id="sale_line_create_works_button">
+            <field name="name">create_works</field>
+            <field name="model" search="[('model', '=', 'sale.line')]"/>
+        </record>
+        <!--
+        <record model="ir.model.button-res.group" id="sale_cancel_button_group_sale">
+            <field name="button" ref="sale_cancel_button"/>
+            <field name="group" ref="group_sale"/>
+        </record>
+        -->
     </data>
 </tryton>

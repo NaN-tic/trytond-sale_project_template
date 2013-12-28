@@ -3,10 +3,14 @@
 
 from trytond.pool import Pool
 from .sale import *
+from .product import *
 
 
 def register():
     Pool.register(
         Sale,
         SaleLine,
+        Product,
+        ConfigurationCompany,
+        Configuration,
         module='sale_project_template', type_='model')
