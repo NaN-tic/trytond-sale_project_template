@@ -1,13 +1,11 @@
-==================================================
-Plantilla de proyectos a partir de lineas de venda
-==================================================
+====================================================
+Venta. Crea proyectos o tareas a partir de plantilla
+====================================================
 
-El módulo sale project template permite la creación de proyectos o tareas a partir
-de plantillas por cada línea de venda.
+El módulo sale project template permite la creación de proyectos o tareas en el
+momento de procesar el pedido de venta.
 
-En Proyectos/Configuración deberá seleccionar la plantilla por defecto que se usará
-para la creación de proyectos o tareas a partir de la línea.
+A los productos deberemos seleccionar una plantilla de proyecto.
 
-En cada línea del pedido de venta dispone de la opción si se debe crear un proyecto
-o una tarea. Si narca esta opción en las líneas, cuando el pedido de venda se procese
-será cuando se generaran los proyectos o tareas a partir de la plantilla por defecto.
+Al procesar un pedido de venta, todas las líneas de la venta que el producto disponga
+de un proyecto asociado, se generará un nuevo proyecto o tarea.
