@@ -2,14 +2,166 @@
 msgid ""
 msgstr "Content-Type: text/plain; charset=utf-8\n"
 
-msgctxt "error:sale.line:"
-msgid "A default template must be defined."
-msgstr "S'ha de definir una plantilla per defecte"
+msgctxt "field:product.template,project_template:"
+msgid "Project Template"
+msgstr "Plantilla projecte"
 
-msgctxt "field:sale.line,create_work:"
-msgid "Create Work"
-msgstr "Crea Tasques"
+msgctxt "field:sale.configuration,sale_project_method:"
+msgid "Project Method"
+msgstr "Mètode projecte"
+
+msgctxt "field:sale.configuration.company,company:"
+msgid "Company"
+msgstr "Empresa"
+
+msgctxt "field:sale.configuration.company,create_date:"
+msgid "Create Date"
+msgstr "Data creació"
+
+msgctxt "field:sale.configuration.company,create_uid:"
+msgid "Create User"
+msgstr "Usuari creació"
+
+msgctxt "field:sale.configuration.company,id:"
+msgid "ID"
+msgstr "ID"
+
+msgctxt "field:sale.configuration.company,rec_name:"
+msgid "Name"
+msgstr "Nom"
+
+msgctxt "field:sale.configuration.company,sale_project_method:"
+msgid "Project Method"
+msgstr "Mètode projecte"
+
+msgctxt "field:sale.configuration.company,write_date:"
+msgid "Write Date"
+msgstr "Data modificació"
+
+msgctxt "field:sale.configuration.company,write_uid:"
+msgid "Write User"
+msgstr "Usuari modificació"
+
+msgctxt "field:sale.line,checked:"
+msgid "Checked"
+msgstr "Comprovat"
+
+msgctxt "field:sale.line,discarded:"
+msgid "Discarded"
+msgstr "Descartat"
+
+msgctxt "field:sale.line,party:"
+msgid "Party"
+msgstr "Tercer"
 
 msgctxt "field:sale.line,work:"
 msgid "Work Effort"
 msgstr "Projecte i tasca"
+
+msgctxt "field:sale.sale,project_method:"
+msgid "Project Method"
+msgstr "Mètode projecte"
+
+msgctxt "field:sale.sale,project_state:"
+msgid "Project State"
+msgstr "Estat projecte"
+
+msgctxt "model:ir.action,name:act_sale_line_form"
+msgid "Processed Sale Lines"
+msgstr "Línies de vendes processades"
+
+msgctxt "model:ir.action,name:act_work_form"
+msgid "Project/Task"
+msgstr "Projecte/Tasca"
+
+msgctxt "model:ir.action.act_window.domain,name:act_sale_line_form_domain_all"
+msgid "All"
+msgstr "Tot"
+
+msgctxt ""
+"model:ir.action.act_window.domain,name:act_sale_line_form_domain_checked"
+msgid "Checked"
+msgstr "Comprovat"
+
+msgctxt ""
+"model:ir.action.act_window.domain,name:act_sale_line_form_domain_discarded"
+msgid "Discarded"
+msgstr "Descartat"
+
+msgctxt ""
+"model:ir.action.act_window.domain,name:act_sale_line_form_domain_pending"
+msgid "Pending"
+msgstr "Pendent"
+
+msgctxt ""
+"model:ir.action.act_window.domain,name:act_sale_line_form_domain_processed"
+msgid "Processed"
+msgstr "Processat"
+
+msgctxt "model:ir.ui.menu,name:menu_sale_line_form"
+msgid "Processed Sale Lines"
+msgstr "Línies de vendes processades"
+
+msgctxt "model:sale.configuration.company,name:"
+msgid "Sale Configuration Per Company"
+msgstr "Configuració vendes per empresa"
+
+msgctxt "selection:sale.configuration,sale_project_method:"
+msgid "Individual"
+msgstr "Individual"
+
+msgctxt "selection:sale.configuration,sale_project_method:"
+msgid "Manual"
+msgstr "Manual"
+
+msgctxt "selection:sale.configuration,sale_project_method:"
+msgid "On Order Processed"
+msgstr "Al processar la comanda"
+
+msgctxt "selection:sale.configuration.company,sale_project_method:"
+msgid "Individual"
+msgstr "Individual"
+
+msgctxt "selection:sale.configuration.company,sale_project_method:"
+msgid "Manual"
+msgstr "Manual"
+
+msgctxt "selection:sale.configuration.company,sale_project_method:"
+msgid "On Order Processed"
+msgstr "Al processar la comanda"
+
+msgctxt "selection:sale.sale,project_method:"
+msgid "Individual"
+msgstr "Individual"
+
+msgctxt "selection:sale.sale,project_method:"
+msgid "Manual"
+msgstr "Manual"
+
+msgctxt "selection:sale.sale,project_method:"
+msgid "On Order Processed"
+msgstr "Al processar la comanda"
+
+msgctxt "selection:sale.sale,project_state:"
+msgid "Done"
+msgstr "Realitzat"
+
+msgctxt "selection:sale.sale,project_state:"
+msgid "Exception"
+msgstr "Excepció"
+
+msgctxt "selection:sale.sale,project_state:"
+msgid "None"
+msgstr "Cap"
+
+msgctxt "selection:sale.sale,project_state:"
+msgid "Waiting"
+msgstr "Esperant"
+
+msgctxt "view:sale.line:"
+msgid "Create Project/Task"
+msgstr "Crea Projecte/Tasca"
+
+msgctxt "view:sale.line:"
+msgid "Sale Lines"
+msgstr "Línies de venda"
