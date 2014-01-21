@@ -108,7 +108,6 @@ class Sale():
 
 
 class SaleLine():
-    'Sale Line'
     __name__ = 'sale.line'
 
     party = fields.Function(fields.Many2One('party.party', 'Party'),
@@ -145,7 +144,6 @@ class SaleLine():
         '''
         pool = Pool()
         Work = pool.get('project.work')
-        Config = pool.get('project.template.configuration')
 
         if (self.work or not self.product.project_template
                 or self.sale.project_method == 'manual'):
