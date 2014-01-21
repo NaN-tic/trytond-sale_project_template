@@ -2,14 +2,166 @@
 msgid ""
 msgstr "Content-Type: text/plain; charset=utf-8\n"
 
-msgctxt "error:sale.line:"
-msgid "A default template must be defined."
-msgstr "Debe definir-se una plantilla por defecto"
+msgctxt "field:product.template,project_template:"
+msgid "Project Template"
+msgstr "Plantilla proyecto"
 
-msgctxt "field:sale.line,create_work:"
-msgid "Create Work"
-msgstr "Crear Tareas"
+msgctxt "field:sale.configuration,sale_project_method:"
+msgid "Project Method"
+msgstr "Método proyecto"
+
+msgctxt "field:sale.configuration.company,company:"
+msgid "Company"
+msgstr "Empresa"
+
+msgctxt "field:sale.configuration.company,create_date:"
+msgid "Create Date"
+msgstr "Fecha creación"
+
+msgctxt "field:sale.configuration.company,create_uid:"
+msgid "Create User"
+msgstr "Usuario creación"
+
+msgctxt "field:sale.configuration.company,id:"
+msgid "ID"
+msgstr "ID"
+
+msgctxt "field:sale.configuration.company,rec_name:"
+msgid "Name"
+msgstr "Nombre"
+
+msgctxt "field:sale.configuration.company,sale_project_method:"
+msgid "Project Method"
+msgstr "Método proyecto"
+
+msgctxt "field:sale.configuration.company,write_date:"
+msgid "Write Date"
+msgstr "Fecha modificación"
+
+msgctxt "field:sale.configuration.company,write_uid:"
+msgid "Write User"
+msgstr "Usuario modificación"
+
+msgctxt "field:sale.line,checked:"
+msgid "Checked"
+msgstr "Comprovado"
+
+msgctxt "field:sale.line,discarded:"
+msgid "Discarded"
+msgstr "Descartado"
+
+msgctxt "field:sale.line,party:"
+msgid "Party"
+msgstr "Tercero"
 
 msgctxt "field:sale.line,work:"
 msgid "Work Effort"
 msgstr "Proyecto y tarea"
+
+msgctxt "field:sale.sale,project_method:"
+msgid "Project Method"
+msgstr "Método proyecto"
+
+msgctxt "field:sale.sale,project_state:"
+msgid "Project State"
+msgstr "Estado proyecto"
+
+msgctxt "model:ir.action,name:act_sale_line_form"
+msgid "Processed Sale Lines"
+msgstr "Líneas vendo procesadas"
+
+msgctxt "model:ir.action,name:act_work_form"
+msgid "Project/Task"
+msgstr "Proyecto/Tarea"
+
+msgctxt "model:ir.action.act_window.domain,name:act_sale_line_form_domain_all"
+msgid "All"
+msgstr "Todo"
+
+msgctxt ""
+"model:ir.action.act_window.domain,name:act_sale_line_form_domain_checked"
+msgid "Checked"
+msgstr "Comprovado"
+
+msgctxt ""
+"model:ir.action.act_window.domain,name:act_sale_line_form_domain_discarded"
+msgid "Discarded"
+msgstr "Descartado"
+
+msgctxt ""
+"model:ir.action.act_window.domain,name:act_sale_line_form_domain_pending"
+msgid "Pending"
+msgstr "Pendiente"
+
+msgctxt ""
+"model:ir.action.act_window.domain,name:act_sale_line_form_domain_processed"
+msgid "Processed"
+msgstr "Procesado"
+
+msgctxt "model:ir.ui.menu,name:menu_sale_line_form"
+msgid "Processed Sale Lines"
+msgstr "Líneas venta procesadas"
+
+msgctxt "model:sale.configuration.company,name:"
+msgid "Sale Configuration Per Company"
+msgstr "Configuración ventas por empresa"
+
+msgctxt "selection:sale.configuration,sale_project_method:"
+msgid "Individual"
+msgstr "Individual"
+
+msgctxt "selection:sale.configuration,sale_project_method:"
+msgid "Manual"
+msgstr "Manual"
+
+msgctxt "selection:sale.configuration,sale_project_method:"
+msgid "On Order Processed"
+msgstr "Al procesar el pedido"
+
+msgctxt "selection:sale.configuration.company,sale_project_method:"
+msgid "Individual"
+msgstr "Individual"
+
+msgctxt "selection:sale.configuration.company,sale_project_method:"
+msgid "Manual"
+msgstr "Manual"
+
+msgctxt "selection:sale.configuration.company,sale_project_method:"
+msgid "On Order Processed"
+msgstr "Al procesar el pedido"
+
+msgctxt "selection:sale.sale,project_method:"
+msgid "Individual"
+msgstr "Individual"
+
+msgctxt "selection:sale.sale,project_method:"
+msgid "Manual"
+msgstr "Manual"
+
+msgctxt "selection:sale.sale,project_method:"
+msgid "On Order Processed"
+msgstr "Al procesar el pedido"
+
+msgctxt "selection:sale.sale,project_state:"
+msgid "Done"
+msgstr "Realizado"
+
+msgctxt "selection:sale.sale,project_state:"
+msgid "Exception"
+msgstr "Excepción"
+
+msgctxt "selection:sale.sale,project_state:"
+msgid "None"
+msgstr "Ninguno"
+
+msgctxt "selection:sale.sale,project_state:"
+msgid "Waiting"
+msgstr "En espera"
+
+msgctxt "view:sale.line:"
+msgid "Create Project/Task"
+msgstr "Crear Proyecto/Tarea"
+
+msgctxt "view:sale.line:"
+msgid "Sale Lines"
+msgstr "Líneas venta"
