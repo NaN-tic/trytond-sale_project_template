@@ -5,7 +5,7 @@ from trytond.pool import Pool, PoolMeta
 from trytond.transaction import Transaction
 from trytond.pyson import Eval, Bool
 
-__all__ = ['Sale', 'SaleLine', 'ConfigurationCompany', 'Configuration']
+__all__ = ['Sale', 'SaleLine', 'ConfigurationCompany', 'Configuration', 'Work']
 __metaclass__ = PoolMeta
 
 PROJECT_METHODS = [
@@ -163,3 +163,10 @@ class SaleLine():
     def create_works(cls, lines):
         for line in lines:
             line.create_work()
+
+
+class Work():
+    __name__ = 'project.work'
+
+    sale_lines = fields.One2Many('sale.line', 'work', 'Sale Lines',
+        readonly=True)
