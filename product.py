@@ -1,5 +1,5 @@
-#The COPYRIGHT file at the top level of this repository contains the full
-#copyright notices and license terms.
+# The COPYRIGHT file at the top level of this repository contains the full
+# copyright notices and license terms.
 from trytond.model import fields
 from trytond.pool import PoolMeta
 from trytond.pyson import Eval
@@ -13,8 +13,9 @@ class Product:
     project_template = fields.Many2One('project.work', 'Project Template',
         domain=[('template', '=', True)], states={
             'invisible': Eval('type') != 'service',
-            }, on_change_with=['type', 'project_template'], depends=['type'])
+            }, depends=['type'])
 
+    @fields.depends('type', 'project_template')
     def on_change_with_project_template(self):
         if self.type != 'service':
             return None
