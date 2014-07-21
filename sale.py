@@ -145,7 +145,7 @@ class SaleLine():
         pool = Pool()
         Work = pool.get('project.work')
 
-        if (self.work or not self.product.project_template
+        if (self.work or not self.product or not self.product.project_template
                 or self.sale.project_method == 'manual'):
             return
 
