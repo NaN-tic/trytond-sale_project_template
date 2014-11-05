@@ -9,9 +9,7 @@ from trytond.transaction import Transaction
 
 
 class TestCase(unittest.TestCase):
-    '''
-    Test sale_project_template module.
-    '''
+    'Test sale_project_template module'
 
     def setUp(self):
         trytond.tests.test_tryton.install_module('sale_project_template')
@@ -19,9 +17,7 @@ class TestCase(unittest.TestCase):
         self.config = POOL.get('sale.configuration')
 
     def test0005views(self):
-        '''
-        Test views.
-        '''
+        'Test views'
         test_view('sale_project_template')
 
     def test0006depends(self):
